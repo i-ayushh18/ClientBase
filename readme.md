@@ -16,7 +16,7 @@ A web-based application for managing client data, including creating, reading, u
 ### Backend Setup
 1. Clone the repository:
     ```bash
-    git clone https://github.com/i-ayushh18/client-management-system.git
+    git clone https://github.com/i-ayushh18/ClientBase.git
     ```
 2. Navigate to the project directory:
     ```bash
