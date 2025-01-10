@@ -4,11 +4,11 @@ import env from "dotenv";
 env.config();
 
 const db = new pg.Client({
-  user: 'postgres',  // Use postgres directly here for testing
-  host: 'localhost',
-  database: 'client_db',
-  password: 'mydatabase',  // Ensure password is correct
-  port: 5432,
+  user: process.env.PG_USER,  
+  host: process.env.PG_HOST,
+  database: process.env.PG_DATABASE, 
+  password: String(process.env.PG_PASSWORD), 
+  port: process.env.PG_PORT,
 });
 
 db.connect();
